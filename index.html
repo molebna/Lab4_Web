@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erdwark</title>
+  <style type="text/css">
+    h1 {
+      font-size: 5vw;
+    }
+
+    p {
+      font-size: 1.5vw;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Garamond;
+    }
+
+    #yellowSquare {
+      background-color: #f0d143;
+      width: 60vw;
+      height: 70vh;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    #imageWoman {
+      position: absolute;
+      left: 48vw;
+      top: 8vh;
+    }
+
+    #textBox1 {
+      position: absolute;
+      left: 10vw;
+      top: 41vh;
+      background-color: #ffffff;
+      padding: 6vh 13vw;
+    }
+
+    #textBox2 {
+      position: absolute;
+      left: 23vw;
+      top: 9vh;
+      color: #4a4a4a;
+      width: 25vw;
+    }
+
+    .relative-image {
+      width: 35vw;
+      height: 35vw;
+    }
+
+    @media screen and (max-width: 768px) {
+      @import url('https://fonts.googleapis.com/css?family=Garamond');
+
+      h1 {
+        font-size: 10vw;
+        font-family: 'Garamond', serif;
+      }
+
+      p {
+        font-size: 4.5vw;
+        line-height: 7vw;
+        font-family: 'Garamond', serif;
+      }
+
+      #yellowSquare {
+        width: 70%;
+        height: 45vh;
+      }
+
+      #imageWoman {
+        left: 16%;
+        top: 42%;
+        width: 80%;
+      }
+
+      #textBox1 {
+        left: 0%;
+        top: 67%;
+        padding: 6% 14% 6% 9%;
+      }
+
+      #textBox2 {
+        width: 73%;
+        left: 15%;
+        top: 6%;
+      }
+
+      .relative-image {
+        width: 90%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="yellowSquare"></div>
+  <div id="imageWoman">
+    <picture>
+
+      <source media="(max-width: 768px)" srcset="https://drive.google.com/uc?id=13xfd-8H_Ycqj7blwFVNery_6WfEEBjQh" class="relative-image">
+
+      <source srcset="https://drive.google.com/uc?id=1vg4GBIF06rl2MpE7OM4VtuicajzF1UPq" class="relative-image">
+
+      <img src="https://drive.google.com/uc?id=1vg4GBIF06rl2MpE7OM4VtuicajzF1UPq" alt="Woman Image" class="relative-image">
+    </picture>
+  </div>
+  <div id="textBox1">
+    <h1>Quality<br />Education</h1>
+  </div>
+  <div id="textBox2">
+    <p>
+      World-class faculty introduce you to the
+      very latest in business knowledge and
+      provide you with the tools and skills to
+      overcome challenges and find solutions
+    </p>
+  </div>
+</body>
+</html>
